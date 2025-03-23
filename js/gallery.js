@@ -79,14 +79,6 @@ const itemList = images.map(item => `
   </li>`).join(""); 
 gallery.insertAdjacentHTML('beforeend', itemList);
 
-const links = document.querySelectorAll('.gallery-link');
-links.forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault(); 
-  });
-});
-
-
 const galleryClick = document.querySelector("ul.gallery");
 galleryClick.addEventListener("click", function (event) {
     event.preventDefault();
